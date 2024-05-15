@@ -1,124 +1,144 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Syllabus Generator</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <div class="container">
-        <div class="d-flex justify-content-center">
-            <div class="card my-5 col-md-10 p-5">
-                <h1 class="m-auto mb-3"><span class="badge rounded-pill" style="background-color: var(--color-2);font-size: 40px;color: var(--color-1);">Syllabus Generator</span> </h1>
-                <form action="">
-                    <h3>Course Details:</h3>
-                    <div class="input-group">
-                        <label class="input-group-text"   for="">Course Code:</label>
-                        <input type="text" class="form-control" placeholder="Enter Course Code">
-                        <label class="input-group-text"   for="">Course Title:</label>
-                        <input type="text" class="form-control" placeholder="Enter Course Title">
-                    </div>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Syllabus Generator</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+                <div class="d-flex justify-content-center">
+                        <div class="card my-5 col-md-10 p-5">
+                                <h1 class="m-auto mb-3"><span class="badge rounded-pill" style="background-color: var(--color-2);font-size: 40px;color: var(--color-1);">Syllabus Generator</span> </h1>
+                                <form action="">
+                                        <h3>Course Details:</h3>
+                                        <div class="input-group">
+                                                <label class="input-group-text" for="">Course Code:</label>
+                                                <input type="text" class="form-control" id="courseCode" placeholder="Enter Course Code">
+                                                <label class="input-group-text" for="">Course Title:</label>
+                                                <input type="text" class="form-control" id="courseTitle" placeholder="Enter Course Title">
+                                        </div>
 
-                    <div class="input-group">    
-                        <label class="input-group-text"   for="">Version no:</label>
-                        <input type="text" class="form-control" placeholder="Enter Version no">
-                    </div>
+                                        <div class="input-group">    
+                                                <label class="input-group-text" for="">Version no:</label>
+                                                <input type="text" class="form-control" id="versionNo" placeholder="Enter Version no">
+                                        </div>
 
-                    <div class="input-group">    
-                        <label class="input-group-text"   for="">Objective:</label>
-                        <input type="text" class="form-control" placeholder="Enter Objective">
-                    </div>
+                                        <div class="input-group">    
+                                                <label class="input-group-text" for="">Objective:</label>
+                                                <input type="text" class="form-control" id="objective" placeholder="Enter Objective">
+                                        </div>
 
-                    <h3>Course Outcomes:</h3>
-                    <div class="input-group">    
-                        <label class="input-group-text"   for="">CO1:</label>
-                        <input type="text" class="form-control" placeholder="Enter CO1">
-                    </div>
-                    <div class="input-group">    
-                        <label class="input-group-text"   for="">CO2:</label>
-                        <input type="text" class="form-control" placeholder="Enter CO2">
-                    </div>
-                    <div class="input-group">    
-                        <label class="input-group-text"   for="">CO3:</label>
-                        <input type="text" class="form-control" placeholder="Enter CO3">
-                    </div>
-                    <div class="input-group">    
-                        <label class="input-group-text"   for="">CO4:</label>
-                        <input type="text" class="form-control" placeholder="Enter CO4">
-                    </div>
-                    <div class="input-group">    
-                        <label class="input-group-text"   for="">CO5:</label>
-                        <input type="text" class="form-control" placeholder="Enter CO5">
-                    </div>
+                                        <h3>Course Outcomes:</h3>
+                                        <div class="input-group">    
+                                                <label class="input-group-text" for="">CO1:</label>
+                                                <input type="text" class="form-control" id="co1" placeholder="Enter CO1">
+                                        </div>
+                                        <div class="input-group">    
+                                                <label class="input-group-text" for="">CO2:</label>
+                                                <input type="text" class="form-control" id="co2" placeholder="Enter CO2">
+                                        </div>
+                                        <div class="input-group">    
+                                                <label class="input-group-text" for="">CO3:</label>
+                                                <input type="text" class="form-control" id="co3" placeholder="Enter CO3">
+                                        </div>
+                                        <div class="input-group">    
+                                                <label class="input-group-text" for="">CO4:</label>
+                                                <input type="text" class="form-control" id="co4" placeholder="Enter CO4">
+                                        </div>
+                                        <div class="input-group">    
+                                                <label class="input-group-text" for="">CO5:</label>
+                                                <input type="text" class="form-control" id="co5" placeholder="Enter CO5">
+                                        </div>
 
-                    <h3>Units:</h3>
-                    <div class="input-group">
-                        <h5 class="input-group-text"  >Unit 1:</h5>
-                        <input type="text" class="form-control" placeholder="Name">
-                        <input type="text" style="border-left: 1px solid #ee7d21; border-right: 2px solid #ee7d21;" class="form-control w-50" placeholder="Syllabus">
-                        <input type="text" class="form-control" placeholder="No. of hrs">
-                    </div>
+                                        <h3>Units:</h3>
+                                        <div class="input-group">
+                                                <h5 class="input-group-text">Unit 1:</h5>
+                                                <input type="text" class="form-control" id="unit1Name" placeholder="Name">
+                                            </div>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" id="unit1Syllabus" placeholder="Content">
+                                            </div>
+                                            <div class="input-group">   
+                                                <input type="text" class="form-control" id="unit1Hours" placeholder="No. of hrs">
+                                            </div>
 
-                    <div class="input-group">
-                        <h5 class="input-group-text"  >Unit 2:</h5>
-                        <input type="text" class="form-control" placeholder="Name">
-                        <input type="text" style="border-left: 1px solid #ee7d21; border-right: 2px solid #ee7d21;" class="form-control w-50" placeholder="Syllabus">
-                        <input type="text" class="form-control" placeholder="No. of hrs">
-                    </div>
+                                        <div class="input-group">
+                                                <h5 class="input-group-text">Unit 2:</h5>
+                                                <input type="text" class="form-control" id="unit2Name" placeholder="Name">
+                                            </div>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" id="unit2Syllabus" placeholder="Content">
+                                            </div>
+                                            <div class="input-group">   
+                                                <input type="text" class="form-control" id="unit2Hours" placeholder="No. of hrs">
+                                            </div>
 
-                    <div class="input-group">
-                        <h5 class="input-group-text"  >Unit 3:</h5>
-                        <input type="text" class="form-control" placeholder="Name">
-                        <input type="text" style="border-left: 1px solid #ee7d21; border-right: 2px solid #ee7d21;" class="form-control w-50" placeholder="Syllabus">
-                        <input type="text" class="form-control" placeholder="No. of hrs">
-                    </div>
-                        
-                    <div class="input-group">
-                        <h5 class="input-group-text"  >Unit 4:</h5>
-                        <input type="text" class="form-control" placeholder="Name">
-                        <input type="text" style="border-left: 1px solid #ee7d21; border-right: 2px solid #ee7d21;" class="form-control w-50" placeholder="Syllabus">
-                        <input type="text" class="form-control" placeholder="No. of hrs">
-                    </div>
+                                        <div class="input-group">
+                                                <h5 class="input-group-text">Unit 3:</h5>
+                                                <input type="text" class="form-control" id="unit3Name" placeholder="Name">
+                                            </div>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" id="unit3Syllabus" placeholder="Content">
+                                            </div>
+                                            <div class="input-group">   
+                                                <input type="text" class="form-control" id="unit3Hours" placeholder="No. of hrs">
+                                            </div>
+                                                
+                                        <div class="input-group">
+                                                <h5 class="input-group-text">Unit 4:</h5>
+                                                <input type="text" class="form-control" id="unit4Name" placeholder="Name">
+                                            </div>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" id="unit4Syllabus" placeholder="Content">
+                                            </div>
+                                            <div class="input-group">   
+                                                <input type="text" class="form-control" id="unit4Hours" placeholder="No. of hrs">
+                                            </div>
 
-                    <div class="input-group">
-                        <h5 class="input-group-text"  >Unit 5:</h5>
-                        <input type="text" class="form-control" placeholder="Name">
-                        <input type="text" style="border-left: 1px solid #ee7d21; border-right: 2px solid #ee7d21;" class="form-control w-50" placeholder="Syllabus">
-                        <input type="text" class="form-control" placeholder="No. of hrs">
-                    </div>
+                                        <div class="input-group">
+                                                <h5 class="input-group-text">Unit 5:</h5>
+                                                <input type="text" class="form-control" id="unit5Name" placeholder="Name">
+                                            </div>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" id="unit5Syllabus" placeholder="Content">
+                                            </div>
+                                            <div class="input-group">   
+                                                <input type="text" class="form-control" id="unit5Hours" placeholder="No. of hrs">
+                                            </div>
 
-                    <h3>Books:</h3>
-                    <div class="input-group">
-                        <label class="input-group-text"   for="">Textbooks:</label>
-                        <textarea name="" id="" class="form-control"></textarea>
-                    </div>
-                    <div class="input-group">
-                        <label class="input-group-text"   for="">Reference Books:</label>
-                        <textarea name="" id="" class="form-control"></textarea>
-                    </div>
+                                        <h3>Books:</h3>
+                                        <div class="input-group">
+                                                <label class="input-group-text" for="">Textbooks:</label>
+                                                <textarea id="textbooks" class="form-control"></textarea>
+                                        </div>
+                                        <div class="input-group">
+                                                <label class="input-group-text" for="">Reference Books:</label>
+                                                <textarea id="referenceBooks" class="form-control"></textarea>
+                                        </div>
 
-                    <h3>Important Dates:</h3>
-                    <div class="input-group">
-                        <label class="input-group-text w-50"   for="">Recommendation by board of Studies on:</label>
-                        <input type="date" class="form-control" placeholder="">
-                    </div>
-                    <div class="input-group">
-                        <label class="input-group-text w-50"   for="">Date of Publication after approval in the Academic council:</label>
-                        <input type="date" class="form-control" placeholder="">
-                    </div>
-                    <div class="d-flex justify-content-center">
-                        <button>Generate DOCX</button>
-                    </div>
+                                        <h3>Important Dates:</h3>
+                                        <div class="input-group">
+                                                <label class="input-group-text w-50" for="">Recommendation by board of Studies on:</label>
+                                                <input type="date" class="form-control" id="recommendationDate" placeholder="">
+                                        </div>
+                                        <div class="input-group">
+                                                <label class="input-group-text w-50" for="">Date of Publication after approval in the Academic council:</label>
+                                                <input type="date" class="form-control" id="publicationDate" placeholder="">
+                                        </div>
+                                        <div class="d-flex justify-content-center">
+                                                <button>Generate DOCX</button>
+                                        </div>
 
-                </form>
-            </div>
+                                </form>
+                        </div>
+                </div>
         </div>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  </body>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
 </html>
