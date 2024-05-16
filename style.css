@@ -2,6 +2,26 @@
     --color-1: white;
     --color-2: black;
 }
+@media print {
+    body{
+        all: unset;
+    }
+    .container{
+        display: none;
+    }
+
+    b{
+        color: red;
+        font-weight: 900;
+    }
+
+    .table{
+        border-color: black;
+        width: 95vw!important;
+    }
+
+}
+
 body{
     background-color: var(--color-1);
     background-image: radial-gradient(var(--color-2) 2px, transparent 0);
